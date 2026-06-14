@@ -1,4 +1,4 @@
-# RogueVault — Roguelike Game Discovery and Rating Hub
+# RogueVault - Roguelike Game Discovery and Rating Hub
 
 ## Project Context
 
