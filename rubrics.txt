@@ -1,0 +1,110 @@
+RogueVault — Roguelike Game Discovery and Rating Hub
+Rubrics
+
+Each item below is rated independently. The rater marks pass or fail for
+each item based only on the rule stated in instructions.md.
+
+1. Deliverable File Structure
+The submission contains either three files named index.html, style.css, and script.js, or a single combined HTML file containing HTML, CSS, and JavaScript.
+
+2. No External Frameworks or Libraries
+The application uses no third-party UI frameworks or libraries including React, Vue, Angular, Bootstrap, Tailwind CSS, and jQuery.
+
+3. Runs Locally Without a Server
+The entire application runs by opening the HTML file directly in a browser with no build step or server required.
+
+4. Header and Search Bar Presence
+The application contains a visible header section and a search bar section positioned above the game card grid.
+
+5. Filter Sidebar and Game Card Grid Presence
+The application contains a filter sidebar and a game card grid, both visible within the single-page layout.
+
+6. Detail View and Submit Form Presence
+The application contains a game detail view implemented as a modal or expandable panel and a form with the title Submit a Game, both visible within the single-page layout.
+
+7. Six Pre-Populated Games on Load
+The application contains exactly six game entries on first load with no more and no fewer.
+
+8. Game Titles and Cover Images Match Spec
+All six pre-populated games have the exact titles and cover image filenames specified in the Initial Game Collection section.
+
+9. Game Tags Match Spec
+All six pre-populated games carry the exact tag combinations listed in the Initial Game Collection section.
+
+10. Game Difficulty and Replayability Ratings Match Spec
+All six pre-populated games have the exact difficulty and replayability ratings listed in the Initial Game Collection section.
+
+11. Games Generated from JavaScript Array
+Game cards are generated dynamically from a JavaScript data array and not written as static HTML elements.
+
+12. All Six Predefined Tags Present Everywhere
+The six predefined tags Permadeath, Procedural Generation, Turn-Based, Deck-Building, Dungeon Crawler, and Action Roguelite appear in the filter sidebar, on game cards, in the detail view, and in the submission form checkboxes.
+
+13. Game Card Displays Cover Image, Title, and Tags
+Each game card displays the cover image, game title, and assigned tags of the game.
+
+14. Game Card Hover Effect
+Hovering over a game card changes the card's border or shadow.
+
+15. Search Filters by Title in Real Time
+Typing into the search input filters the displayed game cards by title as the user types without a page reload.
+
+16. Search is Case Insensitive
+The search filter treats uppercase and lowercase characters as identical when matching game titles.
+
+17. Clearing Search Restores Matching Games
+Removing all text from the search input restores all games that match the current active tag filters.
+
+18. Tag Filter Requires All Selected Tags
+A game card is visible only when it contains every tag that is currently checked in the filter sidebar.
+
+19. No Tags Selected Shows All Games
+When no tag checkboxes are selected, all game cards are displayed.
+
+20. Tag Filter Updates Without Page Reload
+Checking or unchecking a tag checkbox updates the displayed game cards without a page reload.
+
+21. Clicking a Card Opens the Detail View
+Clicking any game card opens the detail view for that game.
+
+22. Detail View Shows All Required Fields
+The detail view displays the game title, cover image, full description, complete tag list, difficulty rating, and replayability rating of the selected game.
+
+23. Star Ratings Displayed Correctly in Detail View
+Difficulty and replayability ratings in the detail view are shown as star icons on a scale of 1 to 5 where filled stars represent the numeric rating value.
+
+24. Title Field Validation
+Submitting the form with the title field empty displays a validation message near the title field and does not add a game to the grid.
+
+25. Description Field Validation
+Submitting the form with the description field empty displays a validation message near the description field and does not add a game to the grid.
+
+26. Cover Image URL Field Validation
+Submitting the form with the cover image URL field empty displays a validation message near that field and does not add a game to the grid.
+
+27. Tag Selection Validation
+Submitting the form with no tag checkbox selected displays a validation message and does not add a game to the grid.
+
+28. Valid Submission Adds Card Immediately
+Submitting the form with all required fields filled and at least one tag selected adds a new game card at the end of the grid immediately without a page reload.
+
+29. Submitted Game is Searchable and Filterable
+A game added through the form appears in search results and responds to tag filter changes immediately after submission without a page reload.
+
+30. Submitted Game Defaults to 1 Star Ratings
+A game submitted without a difficulty or replayability rating is added with a default rating of 1 star for each.
+
+31. Submitted Games Persist After Refresh
+User-submitted games are stored in localStorage under the key roguevault_games and remain visible in the grid after the page is refreshed.
+
+32. Initial Six Games Not Written to localStorage
+The six pre-populated games load from the JavaScript data array only and are not written into localStorage.
+
+33. Dark Background and Accent Color
+The application background uses a color value in the range of #0d0d0d to #1a1a1a and a single accent color is applied consistently to buttons, links, and active filter states.
+
+34. Clear Visual Hierarchy
+The header, filter sidebar, and game card grid are visually distinct from one another with clear separation in the layout.
+
+35. No Horizontal Scroll at 360px Viewport
+The application displays without horizontal scrolling at a viewport width of 360 pixels.

@@ -1,0 +1,69 @@
+SCOPE OF WORK
+RogueVault — Roguelike Game Discovery and Rating Hub
+=====================================================
+
+FEATURES IN SCOPE
+-----------------
+
+1. Main Layout
+   The application must contain a header section, a search bar section, a filter sidebar, a game card grid, a game detail modal or detail panel, and a Submit a Game form. All sections must be visible and functional within the single-page application.
+
+2. Initial Game Collection
+   The application must contain exactly six pre-populated game entries on first load. Each entry must include a title, cover image, description, tag list, difficulty rating, and replayability rating. The six entries must match the titles, tags, and ratings specified in the project instructions exactly.
+
+3. Game Card Grid
+   Game cards must be displayed in a responsive grid layout and generated dynamically from a JavaScript data array. Each card must show the cover image, game title, and assigned tags.
+
+4. Search Functionality
+   A search input must filter the game grid by title as the user types. Search must be case insensitive, must update results without a page reload, and must restore all matching games when the input is cleared.
+
+5. Tag Filtering
+   A filter sidebar must contain checkboxes for all six predefined tags: Permadeath, Procedural Generation, Turn-Based, Deck-Building, Dungeon Crawler, and Action Roguelite. Selecting one or more tags must filter the displayed games in real time to show only games containing all selected tags. When no tags are selected, all games must be displayed.
+
+6. Game Detail View
+   Clicking any game card must open a detail view implemented as a modal window or expandable panel. The detail view must display the game title, cover image, full description, complete tag list, difficulty rating, and replayability rating.
+
+7. Star Ratings Display
+   Difficulty and replayability ratings must be displayed using star icons with values ranging from 1 to 5. Filled stars must represent the rating value. Both ratings must be visible in the detail view.
+
+8. Submit a Game Form
+   The application must contain a form titled Submit a Game. The form must include a title field, a description field, a cover image URL field, tag selection checkboxes, and a submit button. Submitting a valid form must create a new game object, add it to the collection, and display the new game card immediately at the end of the grid without a page reload. The newly added game must be searchable and filterable immediately after creation. Games submitted without a difficulty or replayability rating must default to a rating of 1 star for each.
+
+9. Form Validation
+   The title field, description field, and cover image URL field cannot be empty. At least one tag must be selected. The game must not be submitted if validation fails. Validation messages must be displayed to the user near the relevant field.
+
+10. localStorage Persistence
+    User-submitted games must be stored in localStorage under the key roguevault_games. Submitted games must remain available after a page refresh. The initial six games must load from a JavaScript array and must not be duplicated into localStorage.
+
+11. Responsive Design
+    The application must function correctly on desktop screens, tablet screens, and mobile screens. The application must display without horizontal scrolling at a viewport width of 360 pixels.
+
+12. Visual Styling
+    The design must use a roguelike-inspired gaming theme. The background must use a color value in the range of #0d0d0d to #1a1a1a. An accent color must be used for buttons, links, and active filter states. Game cards must have a hover effect that changes the card's border or shadow. Clear visual hierarchy must be maintained between the header, filters, and grid.
+
+
+FEATURES OUT OF SCOPE
+---------------------
+
+The following features must not be implemented:
+
+- User registration
+- User login
+- Payment processing
+- Backend APIs
+- External databases
+- Multiplayer functionality
+- Comment systems
+- Review systems beyond the provided difficulty and replayability ratings
+- Server-side programming of any kind
+
+
+TECHNICAL CONSTRAINTS
+---------------------
+
+- The application must be built using HTML5, CSS3, and vanilla JavaScript only.
+- Frameworks such as React, Vue, Angular, Next.js, Nuxt.js, Svelte, Bootstrap, Tailwind CSS, jQuery, or any other third-party UI framework or library are not permitted.
+- The entire application must run locally by opening the HTML file in a browser with no build step, no package manager, and no server required.
+- The application must not rely on any external APIs, CDN-hosted libraries, or network resources at runtime.
+- The application must store user-submitted data using the browser's native localStorage only.
+- All cover images used in the initial game collection must be sourced from public domain or Creative Commons Attribution sources, or created by the participant. The source URL, license type, and author name for each image must be recorded in an accompanying licensing note.
