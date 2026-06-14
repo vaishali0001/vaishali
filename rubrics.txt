@@ -1,4 +1,4 @@
-RogueVault — Roguelike Game Discovery and Rating Hub
+RogueVault - Roguelike Game Discovery and Rating Hub
 Rubrics
 
 Each item below is rated independently. The rater marks pass or fail for
